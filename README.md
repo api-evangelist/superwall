@@ -64,23 +64,170 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Superwall is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
+Superwall is a remote paywall platform for mobile apps, offering AI‑powered monetization tools that let developers build, A/B test, and optimize in‑app paywalls and subscription experiences without shipping an app update. It provides SDKs for iOS, Android, and Web, along with analytics, audience targeting, and flexible pricing plans to help apps grow revenue.
 
-**Areas:** Company
+**Areas:** Company · Monetization · Mobile · SDK · Payments · Analytics
 
 ## Superwall on APIs.io
 
 Everything profiled for Superwall is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/superwall/](https://apis.io/providers/superwall/)** — or go straight to one of the APIs or properties below.
+
+### APIs (42)
+
+- [Superwall App Store Connect Configurations V2 API](https://apis.io/apis/superwall/superwall-app-store-connect-configurations-v2-api/) — CRUD for organization-scoped App Store Connect API key configurations. Pairs with the transparent proxy at `/app-store-connect/proxy/:team_id/*`.
+- [Superwall App User Erasures V2 API](https://apis.io/apis/superwall/superwall-app-user-erasures-v2-api/) — Request, track and cancel the erasure of an end user's data (GDPR Art. 17).
+- [Superwall Application Webapp Origins V2 API](https://apis.io/apis/superwall/superwall-application-webapp-origins-v2-api/) — Manage the browser-origin allowlist used to authorize WEBAPP checkout for an application.
+- [Superwall Assets V2 API](https://apis.io/apis/superwall/superwall-assets-v2-api/) — Manage media assets (images and videos) for reuse across paywalls.
+- [Superwall Audit Logs V2 API](https://apis.io/apis/superwall/superwall-audit-logs-v2-api/) — Query the V2 API audit log. Each entry records one served request: the caller, endpoint, outcome, and any auth/authz failure. Scoped to an organization.
+- [Superwall Campaigns V2 API](https://apis.io/apis/superwall/superwall-campaigns-v2-api/) — Manage campaigns, placements, and audiences. A Campaign controls when and to whom paywalls are displayed. Campaigns are scoped to a specific application…
+- [Superwall Chart Annotations API](https://apis.io/apis/superwall/superwall-chart-annotations-api/) — Annotations mark what happened on an application's timeline, such as a release, a feature by the App Store or a marketing campaign. Every time-series chart…
+- [Superwall Charts V2 API](https://apis.io/apis/superwall/superwall-charts-v2-api/) — Query chart data for analytics and reporting. Includes revenue metrics, subscription data, user analytics, and paywall performance. Chart data is read-only;…
+- [Superwall CLI Agent V2 API](https://apis.io/apis/superwall/superwall-cli-agent-v2-api/) — Hosted, spend-capped AI inference for the Superwall CLI when no local coding agent is available.
+- [Superwall Custom Store Events API](https://apis.io/apis/superwall/superwall-custom-store-events-api/) — Report subscription lifecycle events from a custom store's own billing system.
+- [Superwall Custom Stores API](https://apis.io/apis/superwall/superwall-custom-stores-api/) — Manage the custom stores of a project: stores that sell through the customer's own checkout.
+- [Superwall Demand Score V2 API](https://apis.io/apis/superwall/superwall-demand-score-v2-api/) — Demand Score analytics used by the dashboard. Requires charts:read scope.
+- [Superwall Entitlements V2 API](https://apis.io/apis/superwall/superwall-entitlements-v2-api/) — Manage entitlements and manual grants. An Entitlement represents a feature or capability that can be unlocked for users through product purchases or manual…
+- [Superwall Events V2 API](https://apis.io/apis/superwall/superwall-events-v2-api/) — View event logs and retry failed event deliveries. Events represent messages sent to webhook endpoints.
+- [Superwall Google Play V2 API](https://apis.io/apis/superwall/superwall-google-play-v2-api/) — Configure an application's Google Play service-account credentials and Real-Time Developer Notification delivery.
+- [Superwall Grants V2 API](https://apis.io/apis/superwall/superwall-grants-v2-api/) — Query manual entitlement grants by device or user.
+- [Superwall Imports API](https://apis.io/apis/superwall/superwall-imports-api/) — Bulk import of users, aliases, attributes and subscription history into the subscriptions source of truth.
+- [Superwall Integration Event Names (Service) API](https://apis.io/apis/superwall/superwall-integration-event-names-service-api/) — Custom event names for one project/integration pair, read by integration-router on the webhook ingestion path. Authenticated with the internal service token…
+- [Superwall Me V2 API](https://apis.io/apis/superwall/superwall-me-v2-api/) — User-centric endpoints. These endpoints only require user authentication and do not require organization context.
+- [Superwall Onboarding V2 API](https://apis.io/apis/superwall/superwall-onboarding-v2-api/) — Onboarding milestone state for an application. Read-only; aggregates SDK events, product, and paywall signals for the dashboard quickstart guide.
+- [Superwall Organization Access V2 API](https://apis.io/apis/superwall/superwall-organization-access-v2-api/) — Manage dashboard member project access and organization API key project restrictions.
+- [Superwall Organizations V2 API](https://apis.io/apis/superwall/superwall-organizations-v2-api/) — Manage organization settings.
+- [Superwall Paywall Resolver (Public) API](https://apis.io/apis/superwall/superwall-paywall-resolver-public-api/) — Resolve a numeric paywall id to its identifier. Authenticated with a preview capability (sat_ or API-minted pvt_) from the debugger deep link, sent as…
+- [Superwall Paywall Templates (Public) API](https://apis.io/apis/superwall/superwall-paywall-templates-public-api/) — Browse the global paywall template catalog. This endpoint is public and returns only globally-available templates.
+- [Superwall Paywalls V2 API](https://apis.io/apis/superwall/superwall-paywalls-v2-api/) — Manage paywalls and paywall templates. A Paywall is a monetization screen shown to users. Paywalls are scoped to a specific application (per-platform) since…
+- [Superwall Products V2 API](https://apis.io/apis/superwall/superwall-products-v2-api/) — Manage products (in-app purchases and subscriptions). A Product represents a purchasable item shown on paywalls. Products are scoped to a project…
+- [Superwall Project Transfers V2 API](https://apis.io/apis/superwall/superwall-project-transfers-v2-api/) — The Project Transfers V2 API from Superwall — 6 operation(s) for project transfers v2.
+- [Superwall Projects V2 API](https://apis.io/apis/superwall/superwall-projects-v2-api/) — Manage projects for cross-platform app grouping. A Project groups multiple Applications (one per platform) for unified management.
+- [Superwall Query V2 API](https://apis.io/apis/superwall/superwall-query-v2-api/) — Proxy ClickHouse queries scoped to an organization. Compatible with the clickhouse-client CLI via --url flag.
+- [Superwall Retention Configurations V2 API](https://apis.io/apis/superwall/superwall-retention-configurations-v2-api/) — Manage retention configurations used by the realtime worker. Configurations are stored in Superwall and are not synced to Apple default-message APIs.
+- [Superwall Retention Default Messages V2 API](https://apis.io/apis/superwall/superwall-retention-default-messages-v2-api/) — Manage Apple default message mappings by environment, product, and locale.
+- [Superwall Retention Messages V2 API](https://apis.io/apis/superwall/superwall-retention-messages-v2-api/) — Manage retention messages for Apple subscription win-back. Messages are stored locally and uploaded to Apple for review.
+- [Superwall Retention Messaging Onboarding V2 API](https://apis.io/apis/superwall/superwall-retention-messaging-onboarding-v2-api/) — Dashboard onboarding actions for Apple retention messaging setup.
+- [Superwall Retention Campaigns V2 API](https://apis.io/apis/superwall/superwall-retentioncampaignsv2-api/) — The retentionCampaignsV2 API from Superwall — 7 operation(s) for retentioncampaignsv2.
+- [Superwall RevenueCat V1 (compatible) API](https://apis.io/apis/superwall/superwall-revenuecat-v1-compatible-api/) — RevenueCat v1 API-compatible, read-only subscriber view backed by the subscription source of truth: the subscriber object with its entitlements,…
+- [Superwall RevenueCat V2 (compatible) API](https://apis.io/apis/superwall/superwall-revenuecat-v2-compatible-api/) — RevenueCat v2 API-compatible, read-only customer views backed by the subscription source of truth: the customer object, their subscriptions, active…
+- [Superwall Surveys V2 API](https://apis.io/apis/superwall/superwall-surveys-v2-api/) — Manage surveys shown to users after paywall interactions. Surveys collect user feedback such as why they chose not to subscribe. Surveys are scoped to a…
+- [Superwall Users V2 API](https://apis.io/apis/superwall/superwall-users-v2-api/) — Manage users, user attributes, events, and diagnostics for an application.
+- [Superwall Users V3 API](https://apis.io/apis/superwall/superwall-users-v3-api/) — Alias-aware user subscriptions, aliases, and synced attributes sourced from the subscriptions store.
+- [Superwall Web2App Integrations V2 API](https://apis.io/apis/superwall/superwall-web2app-integrations-v2-api/) — Manage head script integrations for web2app paywall pages. Supports Facebook Pixel, Google Tag Manager, Console Logger, and custom scripts.
+- [Superwall Webhooks V2 API](https://apis.io/apis/superwall/superwall-webhooks-v2-api/) — Manage webhook endpoints for receiving real-time event notifications. Delivery formats use dedicated Svix applications: `superwall` (default) and…
+- [Superwall WorkOS Organization Admin API](https://apis.io/apis/superwall/superwall-workos-organization-admin-api/) — Mint WorkOS Admin Portal links for organization administrators to self-configure SSO, Directory Sync, audit log streaming, and domain verification.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Superwall Agentic Access](https://apis.io/agentic-access/superwall/superwall-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [AuditLogEntryWithActor](https://apis.io/schemas/superwall/superwall-audit-log-entry-with-actor/)
+- [AuditLogList](https://apis.io/schemas/superwall/superwall-audit-log-list/)
+- [CustomStoreEvent](https://apis.io/schemas/superwall/superwall-custom-store-event/)
+- [DoctorReport](https://apis.io/schemas/superwall/superwall-doctor-report/)
+- [Rule Conditions](https://apis.io/schemas/superwall/superwall-rule-conditions/)
+- [Rule Conditions](https://apis.io/schemas/superwall/superwall-rule-conditions-1/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Superwall Context](https://apis.io/jsonld/superwall/superwall-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Superwall API Rules](https://apis.io/rules/superwall/superwall-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Superwall Authentication](https://apis.io/security/superwall/superwall-authentication/)
+- [Superwall Domain Security](https://apis.io/security/superwall/superwall-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Superwall Plans Pricing](https://apis.io/plans/superwall/superwall-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Superwall Rate Limits](https://apis.io/rate-limits/superwall/superwall-rate-limits/)
 
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://superwall.com/)
+- [Documentation](https://superwall.com/docs/)
+- [Getting started](https://superwall.com/case-studies/rizz-god)
+- [API reference](https://superwall.com/docs/)
+- [Pricing](https://superwall.com/pricing)
+- [Sign up](https://superwall.com/signup)
+- [Support](https://superwall.com/docs/support)
+- [Blog](https://superwall.com/blog)
+- [Terms of service](https://superwall.com/legal/terms-of-service)
+- [Privacy policy](https://superwall.com/legal/privacy-policy)
+- [GitHub](https://github.com/superwall)
+- [Status](https://status.superwall.com/)
 
 ## API Evangelist rating
 
-Not yet rated. See [apis.io/providers/superwall/](https://apis.io/providers/superwall/).
+**Kin Score 67.1** — exemplar · rubric 0.25.0 · scored 2026-10-28
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 58.0 |
+| Contract governance | 79.1 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 77.9 |
+| Access clarity | 73.2 |
+
+**Agent readiness 40.6** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 22.3** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/superwall/](https://apis.io/providers/superwall/).
 
 ## How this profile is made
 
